@@ -1,0 +1,157 @@
+.display__schema {
+  display: block;
+  height: 100%;
+  width: 600px;
+  border: 3px solid;
+  border-radius: 5px;
+  margin: 20px auto 0;
+}
+
+.display__lable {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0 20px;
+}
+
+.btn__add__user {
+  text-align: center;
+}
+
+.btn__add__user button {
+  font-size: 20px;
+  padding: 5px 15px;
+  background: rgb(109, 109, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.users__elements {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.btn__take__user {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn__take__user button {
+  font-size: 20px;
+  padding: 5px 15px;
+  background: rgb(95, 158, 179);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user {
+  font-size: 20px;
+    width: 200px;
+    margin: 2px auto;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.highlight {
+  background: red;
+}
+
+/*********
+  Modal
+*********/
+
+.modal {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  top: -1000px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: scroll;
+  padding: 60px 15px;
+}
+
+.modal_active {
+  position: fixed;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
+}
+
+.modal__content {
+  width: 100%;
+  max-width: 500px;
+  background: #f9f9f9;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 5px 15px black;
+  padding: 20px;
+}
+
+.modal__header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  height: 30px;
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.modal__close-button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+}
+
+.modal__title {
+  font-size: 25px;
+  margin: 0 0 15px;
+}
+
+.modal__success {
+  background: #8aff8a;
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.modal__success__active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  transition: .3s;
+}
+
+.modal__input {
+  width: calc(100% - 7.2px);
+  font-size: 15px;
+}
+
+.modal__futer {
+  margin-top: 20px;
+}
+
+.modal__close-add-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

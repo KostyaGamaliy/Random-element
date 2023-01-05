@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Randomize</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="display__schema">
+			<div class="display__lable">Take random user</div>
+
+			<div class="btn__add__user">
+				<button class="callback-button">Добавить пользователя</button>
+			</div>
+
+			<div class="users__elements"></div>
+
+			<div class="btn__take__user">
+				<button class="random-button">Выбрать пользователя</button>
+			</div>
+		</div>
+
+		<!-- Модальное окно -->
+		<div class="modal">
+			<div class="modal__content">
+				<div class="modal__header">
+					<div>Modal title</div>
+					<button class="modal__close-button">
+						<img src="./Img/close-modal.png" width="18" alt="" />
+					</button>
+				</div>
+
+				<div class="modal__body">
+					<div class="modal__title">Имя пользователя</div>
+					<div class="modal__success">Пользователь был добавлен</div>
+					<input type="text" class="modal__input"></input>
+				</div>
+
+				<div class="modal__futer">
+					<div class="modal__close-add-button">
+						<button class="modal__close">Отмена</button>
+						<button class="modal__add">Добавить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
